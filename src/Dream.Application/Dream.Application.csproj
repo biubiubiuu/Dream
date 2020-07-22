@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Identity.Application" Version="2.9.0" />
 
+	  
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
 	  <ProjectReference Include="..\Dream.Application.Caching\Dream.Application.Caching.csproj" />
 	  <ProjectReference Include="..\Dream.Application.Contracts\Dream.Application.Contracts.csproj" />
