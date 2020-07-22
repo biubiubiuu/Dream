@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="2.9.0" />
+
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+	  <ProjectReference Include="..\Dream.Application.Caching\Dream.Application.Caching.csproj" />
+	  <ProjectReference Include="..\Dream.Application.Contracts\Dream.Application.Contracts.csproj" />
+	  <ProjectReference Include="..\Dream.Domain.Shared\Dream.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

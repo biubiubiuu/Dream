@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>..\Dream.HttpApi.Hosting\Dream.Application.Contracts.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Identity.Domain" Version="2.9.0" />
+
+		<ProjectReference Include="..\Dream.Domain.Shared\Dream.Domain.Shared.csproj" />
+
+		<ProjectReference Include="..\Dream.Domain\Dream.Domain.csproj" />
+	</ItemGroup>
+
+</Project>
